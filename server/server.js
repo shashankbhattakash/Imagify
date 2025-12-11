@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 
 // --- Configure CORS explicitly ---
-const allowedOrigin = "https://imagify-kappa-nine.vercel.app/"; // set your frontend origin here
+const allowedOrigin = "https://imagify-kappa-nine.vercel.app"; // set your frontend origin here
 const corsOptions = {
   origin: allowedOrigin, // use '*' only for dev (not with credentials)
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
